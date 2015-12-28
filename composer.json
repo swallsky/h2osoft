@@ -1,0 +1,19 @@
+{
+	"name": "ybluesky/h2osoft",
+    "description": "h2osoft software",
+    "keywords": ["h2osoft", "base soft", "ybluesky"],
+    "homepage": "http://h2osoft.mx-8.com/",
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "issues": "http://h2osoft.mx-8.com",
+        "forum": "http://h2osoft.mx-8.com",
+        "wiki": "http://h2osoft.mx-8.com/wiki",
+        "source": "http://h2osoft.mx-8.com"
+    },
+    "minimum-stability": "dev",
+    "require": {
+    	"php": ">=5.4.0",
+    	"ybluesky/h2o": "0.1.*@dev"
+    }
+}
