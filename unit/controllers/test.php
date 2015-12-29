@@ -1,7 +1,7 @@
 <?php
-namespace unit\controllers;
+namespace app\unit\controllers;
 
-use H2O\base\Controller;
+use H2O\web\Controller;
 
 class Test extends Controller
 {
