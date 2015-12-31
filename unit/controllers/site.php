@@ -5,6 +5,6 @@ class Site extends Controller
 {
 	public function actIndex()
 	{
-		echo 'Welcome to H2O world!';
+		$this->render('index.php');
 	}
 }
