@@ -5,6 +5,6 @@ class Site extends Controller
 {
 	public function actIndex()
 	{
-		return $this->render('index.php',['data'=>'sky']);
+		return $this->render('index.php',['data1'=>'sky']);
 	}
 }
