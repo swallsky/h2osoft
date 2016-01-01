@@ -7,8 +7,6 @@ class Test extends Controller
 {
 	public function actHello()
 	{
-		$get = Request::get();
-		print_r($get);
-		echo 'Welcome H2O!';
+		return '包含模块';
 	}
 }
