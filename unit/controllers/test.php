@@ -18,6 +18,6 @@ class Test extends Controller
 	 */
 	public function actHello()
 	{
-		return '测试模块';
+		return $this->render('hello');
 	}
 }
