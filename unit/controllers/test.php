@@ -5,8 +5,19 @@ use H2O\web\Request;
 
 class Test extends Controller
 {
+	/**
+	 * 初始化
+	 */
+	public function __construct()
+	{
+		$this->clearLayout();
+	}
+	/**
+	 * 测试
+	 * @return string
+	 */
 	public function actHello()
 	{
-		return '包含模块';
+		return '测试模块';
 	}
 }

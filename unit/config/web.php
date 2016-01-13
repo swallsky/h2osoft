@@ -4,7 +4,7 @@
  */
 
 return [
-    'basePath'  =>  dirname(__DIR__),
-    'defaultLayout' =>  'layout.index',
-    'request'   =>  include(__DIR__.'/request.php')
+    'basePath'				=>  	dirname(__DIR__), //程序主目录
+    'defaultLayout' 	=>  	'layout.index', //默认布局
+    'request'   				=>  	include(__DIR__.'/request.php'), //路由规则
 ];
