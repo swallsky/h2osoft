@@ -10,7 +10,7 @@ class Test extends Controller
 	 */
 	public function __construct()
 	{
-		$this->clearLayout();
+// 		parent::__construct();
 	}
 	/**
 	 * 测试
