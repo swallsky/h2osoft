@@ -18,6 +18,10 @@ class Site extends Controller
 		foreach($m->getAttributes() as $k=>$v){
 			echo $k.'='.$v.'<br>';
 		}
+		
+		$db = new \H2O\db\Command();
+		$query = $db->setSql('SELECT * FROM user')->fetch();
+		print_r($query);
 		return $this->render('index',['data'=>'sky','lm'=>$lm]);
 	}
 }

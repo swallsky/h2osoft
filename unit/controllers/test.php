@@ -1,8 +1,6 @@
 <?php
 namespace app\unit\controllers;
 use H2O\web\Controller;
-use H2O\web\Request;
-
 class Test extends Controller
 {
 	/**
@@ -18,6 +16,8 @@ class Test extends Controller
 	 */
 	public function actHello()
 	{
+		$g = $this->get();
+		print_r($g);
 		return $this->render('hello');
 	}
 }
