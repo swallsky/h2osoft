@@ -1,0 +1,13 @@
+#!/bin/bash
+WWW=`dirname $PWD`
+H2OPATH="$WWW/h2o"
+HSVENDOR="$WWW/h2osoft/vendor/ybluesky"
+cp -rf $H2OPATH $HSVENDOR
+rm -rf $HSVENDOR/h2o/.git
+rm -rf $HSVENDOR/h2o/.settings
+rm -rf $HSVENDOR/h2o/vendor
+rm -rf $HSVENDOR/h2o/.buildpath
+rm -rf $HSVENDOR/h2o/.project
+rm -rf $HSVENDOR/h2o/composer.lock
+rm -rf $HSVENDOR/h2o/README.md
+echo '更新成功'
