@@ -2,6 +2,7 @@
 WWW=`dirname $PWD`
 H2OPATH="$WWW/h2o"
 HSVENDOR="$WWW/h2osoft/vendor/ybluesky"
+rm -rf $HSVENDOR/h2o
 cp -rf $H2OPATH $HSVENDOR
 rm -rf $HSVENDOR/h2o/.git
 rm -rf $HSVENDOR/h2o/.settings
