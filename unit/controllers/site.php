@@ -18,12 +18,8 @@ class Site extends Controller
 		foreach($m->getAttributes() as $k=>$v){
 			echo $k.'='.$v.'<br>';
 		}
-		
-		$db = new \H2O\db\Command();
-		$randid = mt_rand(100,999);
-		$db->insert('user',['us_name'=>'测试'.$randid,'us_password'=>'123456','us_email'=>'1@1'.$randid.'.com'])->execute();
-		$query = $db->setSql('SELECT * FROM user WHERE us_name=:us_name')->bindValues([':us_name'=>'root'])->fetch();
-		print_r($query);
+		$m->test();
+		$m->read();
 		return $this->render('index',['data'=>'sky','lm'=>$lm]);
 	}
 }

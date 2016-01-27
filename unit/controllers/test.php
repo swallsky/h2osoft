@@ -17,7 +17,8 @@ class Test extends Controller
 	public function actHello()
 	{
 		$g = $this->get();
-		print_r($g);
+		if(!empty($g))
+			print_r($g);
 		return $this->render('hello');
 	}
 }
