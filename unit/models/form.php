@@ -14,7 +14,7 @@ class form extends Model
 		$db = new \H2O\db\Command();
 		//$db->transaction(function($db){
 			$randid = mt_rand(100,999);
-			$db->insert('user',['us_name'=>'测试'.$randid,'us_password'=>'123456','us_email1'=>'1@1'.$randid.'.com'])->exec();
+			$db->insert('user',['us_name'=>'测试'.$randid,'us_password'=>'123456','us_email'=>'1@1'.$randid.'.com'])->exec();
 			$query = $db->setSql('SELECT * FROM user WHERE us_name=:us_name')->bindValues(['us_name'=>'root'])->fetch();
 			print_r($query);
 		//});
