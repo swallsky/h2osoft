@@ -5,6 +5,14 @@
     "homepage": "http://h2osoft.mx-8.com/",
     "type": "project",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "ybluesky",
+            "email": "xjz1688@1688.com",
+            "homepage": "http://www.mx-8.com/",
+            "role": "Founder and project lead"
+        }
+    ],
     "support": {
         "issues": "http://h2osoft.mx-8.com",
         "forum": "http://h2osoft.mx-8.com",
