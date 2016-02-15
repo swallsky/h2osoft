@@ -9,6 +9,6 @@ class Hello extends Controller
 	 */
 	public function actIndex()
 	{
-		return '测试';
+		return 'hello world';
 	}
 }
