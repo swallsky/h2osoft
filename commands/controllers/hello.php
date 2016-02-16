@@ -9,6 +9,9 @@ class Hello extends Controller
 	 */
 	public function actIndex()
 	{
+		$request = $this->request();
+		$params = $request->getParams();
+		print_r($params);
 		return 'hello world';
 	}
 }
