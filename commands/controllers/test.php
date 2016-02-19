@@ -1,8 +1,25 @@
 <?php
 namespace app\commands\controllers;
-use H2O\console\Controller;
+use H2O\console\Controller,H2O\helpers\Stdout;
 class Test extends Controller
 {
+	/**
+	 * 命令行使用方法
+	 */
+	public function actHelp()
+	{
+		Stdout::title('Test system application example!');
+		Stdout::table([
+			['Method','Summary'],
+			['Test.index','Create `sys_user` table'],
+			['Test.renTable','The name of table `sys_user` to `sys_user1`'],
+			['Test.delTable','Delete table `sys_user`'],
+			['Test.clearTable','清空表`sys_user`数据'],
+			['Test.addColumn','给表`sys_user`添加字段'],
+			['Test.dropColumn','删除表`sys_user`的字段']
+		]);
+		return Stdout::get();
+	}
 	/**
 	 * 默认首页
 	 * @return string

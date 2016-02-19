@@ -18,7 +18,6 @@ class Test extends Builder
 		 	'usr_intro' => ['text','介绍',0],
 		 	'usr_birthday' => ['date','生日',1]
 	 	]);
-		$cmd = new Command();
-		$cmd->setSql($this->get())->exec();
+		$this->exec();
 	}
 }

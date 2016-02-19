@@ -23,7 +23,7 @@ class Site extends Controller
 // 				echo $k.'='.$v.'<br>';
 // 			}
 			$m->test();
-// 			$m->read();
+			$m->read();
 		}
 		return $this->render('index',['data'=>'sky','lm'=>$lm]);
 	}
