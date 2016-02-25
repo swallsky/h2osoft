@@ -19,10 +19,10 @@
         "wiki": "http://h2osoft.mx-8.com/wiki",
         "source": "http://h2osoft.mx-8.com"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
     	"php": ">=5.4.0",
-    	"ybluesky/h2o": "0.1.*@dev"
+    	"ybluesky/h2o": "0.1.*"
     },
     "autoload": {
     	"psr-4": {"app\\":""}
