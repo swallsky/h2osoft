@@ -30,7 +30,7 @@ class form extends Model
 		//$query = $db->setSql('SELECT * FROM user ORDER BY us_id DESC')->batch(10); 批处理方式
 		$query = $db->setSql('SELECT * FROM user ORDER BY us_id DESC')->fetchAll();
 		foreach ($query as $k=>$v){
-			echo $v['us_id'].'<br>';
+// 			echo $v['us_id'].'<br>';
 		}
 	}
 }
