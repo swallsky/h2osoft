@@ -15,4 +15,11 @@ class Test extends Controller
 	{
 		return $this->render('hello');
 	}
+	/**
+	 * 引导程序
+	 */
+	public function actBoot()
+	{
+		echo 'BOOT';
+	}
 }
