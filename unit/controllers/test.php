@@ -20,6 +20,6 @@ class Test extends Controller
 	 */
 	public function actBoot()
 	{
-		echo 'BOOT';
+// 		echo 'BOOT';
 	}
 }

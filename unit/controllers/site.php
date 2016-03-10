@@ -10,6 +10,7 @@ class Site extends Controller
 	 */
 	public function actIndex()
 	{
+// 		$this->clearLayout();
 		$lm = $this->loadModule('test.hello');
 		$m = new form();
 		$request = $this->request();
