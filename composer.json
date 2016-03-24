@@ -26,5 +26,12 @@
     },
     "autoload": {
     	"psr-4": {"app\\":""}
-    }
+    },
+    "config": {
+        "secure-http": false
+    },
+    "repositories": [
+        {"type": "composer", "url": "http://pkg.phpcomposer.com/repo/packagist/"},
+        {"packagist": false}
+    ]
 }

@@ -28,4 +28,15 @@ class Site extends Controller
 		}
 		return $this->render('index',['data'=>'sky','lm'=>$lm]);
 	}
+	public function actCaptcha()
+	{
+		$img = new \H2O\captcha\Captcha();
+		$img->build(160,40);
+		$img->getImage();
+// 		echo $img->getValue();
+	}
+	public function actTest()
+	{
+		$this->redirect('./test.do');
+	}
 }
