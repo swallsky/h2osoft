@@ -22,7 +22,7 @@
     "minimum-stability": "stable",
     "require": {
     	"php": ">=5.4.0",
-    	"ybluesky/h2o": "0.3.*"
+    	"ybluesky/h2o": "0.4.*"
     },
     "autoload": {
     	"psr-4": {"app\\":""}
