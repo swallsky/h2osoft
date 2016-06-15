@@ -26,6 +26,8 @@ class Site extends Controller
 			$m->test();
 			$m->read();
 		}
+		$this->assign(['tt'=>'hello2016']);
+		$this->assign('name','测试2016');
 		return $this->render('index',['data'=>'sky','lm'=>$lm]);
 	}
 	public function actCaptcha()

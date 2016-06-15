@@ -28,9 +28,9 @@ class form extends Model
 	{
 		$db = new \H2O\db\Command();
 		//$query = $db->setSql('SELECT * FROM user ORDER BY us_id DESC')->batch(10); 批处理方式
-		$query = $db->setSql('SELECT * FROM user ORDER BY us_id DESC')->fetchAll();
+		$query = $db->setSql('SELECT * FROM user WHERE us_name IN(:t,:t) ORDER BY us_id DESC')->bindValues([':t'=>'测试'])->fetchAll();
 		foreach ($query as $k=>$v){
-// 			echo $v['us_id'].'<br>';
+			echo $v['us_id'].'<br>';
 		}
 	}
 }

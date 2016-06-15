@@ -12,6 +12,17 @@ class Hello extends Controller
 		return Stdout::get();
 	}
 	/**
+	 * 定时任务
+	 */
+	public function GateIndex()
+	{
+	    if(date('i')%2==0 && date('s')==0){//每两分钟执行一次
+	        return true;
+	    }else{
+	        return false;
+	    }
+	}
+	/**
 	 * 默认首页
 	 * @return string
 	 */

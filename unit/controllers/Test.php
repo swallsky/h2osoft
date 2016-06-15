@@ -22,4 +22,13 @@ class Test extends Controller
 	{
 // 		echo 'BOOT';
 	}
+	public function actGet()
+	{
+		echo 'Get';
+	}
+	public function actAdd()
+	{
+	    $o = new \app\unit\models\LogLogin();
+	    $o->add();
+	}
 }
