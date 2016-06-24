@@ -14,6 +14,7 @@ class Site extends Controller
 		$lm = $this->loadModule('test.hello');
 		$m = new form();
 		$request = $this->request();
+		$m->ups();
 		if($request->getIsGet()){
 // 			$get = $request->get();
 // 			var_dump($get);

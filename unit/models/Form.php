@@ -19,7 +19,14 @@ class form extends Model
 // 			print_r($query);
 		//});
 		$fds = $db->getColumnName('user');
-		print_r($fds);
+	}
+	public function ups()
+	{
+	    $db = new \H2O\db\Command();
+	    $n = $db->update('sys_test',['usr_name'=>'test info'],'usr_id IN(?)')->bindValues([5])->execute();//
+	    var_dump($n);
+	    $n = $db->update('sys_test',['usr_name'=>'test info222'],'usr_id IN(?)')->bindValues([1])->rowCount();
+	    var_dump($n);
 	}
 	/**
 	 * 读取用户信息

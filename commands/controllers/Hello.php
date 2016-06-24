@@ -16,11 +16,12 @@ class Hello extends Controller
 	 */
 	public function GateIndex()
 	{
-	    if(date('i')%2==0 && date('s')==0){//每两分钟执行一次
-	        return true;
-	    }else{
-	        return false;
-	    }
+// 	    if(date('i')%2==0 && date('s')==0){//每两分钟执行一次
+// 	        return true;
+// 	    }else{
+// 	        return false;
+// 	    }
+        return true;
 	}
 	/**
 	 * 默认首页
