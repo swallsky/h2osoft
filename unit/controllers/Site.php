@@ -14,6 +14,7 @@ class Site extends Controller
 		$lm = $this->loadModule('test.hello');
 		$m = new form();
 		$request = $this->request();
+		$m->ups();
 		if($request->getIsGet()){
 // 			$get = $request->get();
 // 			var_dump($get);
@@ -26,6 +27,8 @@ class Site extends Controller
 			$m->test();
 			$m->read();
 		}
+		$this->assign(['tt'=>'hello2016']);
+		$this->assign('name','测试2016');
 		return $this->render('index',['data'=>'sky','lm'=>$lm]);
 	}
 	public function actCaptcha()

@@ -19,7 +19,14 @@ class form extends Model
 // 			print_r($query);
 		//});
 		$fds = $db->getColumnName('user');
-		print_r($fds);
+	}
+	public function ups()
+	{
+	    $db = new \H2O\db\Command();
+	    $n = $db->update('sys_test',['usr_name'=>'test info'],'usr_id IN(?)')->bindValues([5])->execute();//
+	    var_dump($n);
+	    $n = $db->update('sys_test',['usr_name'=>'test info222'],'usr_id IN(?)')->bindValues([1])->rowCount();
+	    var_dump($n);
 	}
 	/**
 	 * 读取用户信息
@@ -28,9 +35,9 @@ class form extends Model
 	{
 		$db = new \H2O\db\Command();
 		//$query = $db->setSql('SELECT * FROM user ORDER BY us_id DESC')->batch(10); 批处理方式
-		$query = $db->setSql('SELECT * FROM user ORDER BY us_id DESC')->fetchAll();
+		$query = $db->setSql('SELECT * FROM user WHERE us_name IN(:t,:t) ORDER BY us_id DESC')->bindValues([':t'=>'测试'])->fetchAll();
 		foreach ($query as $k=>$v){
-// 			echo $v['us_id'].'<br>';
+			echo $v['us_id'].'<br>';
 		}
 	}
 }
